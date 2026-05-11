@@ -1,4 +1,4 @@
-- name: Check required files
+name: "Check required files"
 run: |
 echo "Запуск проверки целостности проекта..."
 if [ -f "index.html" ]; then
