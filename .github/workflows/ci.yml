@@ -1,0 +1,16 @@
+- name: Check required files
+run: |
+echo "Запуск проверки целостности проекта..."
+if [ -f "index.html" ]; then
+echo "Файл index.html найден."
+else
+echo "Ошибка: index.html отсутствует!"
+exit 1
+fi
+if [ -f "CHANGELOG.md" ]; then
+echo "Файл CHANGELOG.md найден."
+else
+echo "Ошибка: CHANGELOG.md отсутствует!"
+exit 1
+fi
+echo "Все проверки успешно пройдены!"
